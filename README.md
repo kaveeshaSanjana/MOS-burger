@@ -7,7 +7,7 @@ A simple and modern Point of Sale (POS) system designed for burger restaurants. 
 ## 🔑 Features
 
 - ✅ Secure login with JWT authentication
-- 🏠 Dashboard/Home view
+- 🏠 Home view
 - 👥 Customer management (CRUD)
 - 🍔 Product management (CRUD)
 - 🛒 Cart functionality with live order building
@@ -22,13 +22,13 @@ A simple and modern Point of Sale (POS) system designed for burger restaurants. 
 ### Frontend
 - Angular
 - JWT Authentication
-- Bootstrap / Tailwind CSS (if used)
-
+- Bootstrap
+  
 ### Backend
 - Spring Boot
 - Spring Security with JWT
-- Spring Data JPA
-- MySQL (or preferred relational DB)
+- Spring Data JPA with Hibernate
+- MySQL
 
 ---
 ## 🚀 Getting Started
