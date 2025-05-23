@@ -1,0 +1,31 @@
+<div class="container">
+    <div class="row">
+        <div class="table-responsive">
+            <table class="table caption-top">
+                <caption>List of Orders</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Date</th>
+                        <th scope="col">Price</th>
+                        <th scope="col">Products</th>
+                        <th scope="col">Update</th>
+                        <th scope="col">Delete</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let order of orders">
+                        <th scope="row">{{order.orderId}}</th>
+                        <td>{{order.email}}</td>
+                        <td>{{order.date}}</td>
+                        <td>{{order.product.length}}</td>
+                        <td><button class="btn btn-primary" (click)="viewOrder(order.product)">View</button></td>
+                        <td><button class="btn btn-warning">Update</button></td>
+                        <td><button class="btn btn-danger" (click)="deleteOrder(order.orderId)">Delete</button></td>
+                    </tr>
+            </table>
+        </div>
+        
+    </div>
+</div>

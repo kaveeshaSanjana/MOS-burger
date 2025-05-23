@@ -1,0 +1,35 @@
+
+<div class="text-end">
+    <button type="button" routerLink="/customer/add" class="btn bg-success text-end text-white">Add</button>
+</div>
+<div class="row">
+    <div class="table-responsive">
+        <table class="table caption-top">
+            <caption>List of Customers</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Image</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Telephone</th>
+                    <th scope="col">Update</th>
+                    <th scope="col">Delete</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let c of customers">
+                    <td>
+                        <div class="customer-image-container">
+                            <img [src]="'https://static.vecteezy.com/system/resources/previews/000/439/863/original/vector-users-icon.jpg'" alt="{{ c.name }}" class="customer-image">
+                        </div>
+                    </td>
+                    <th scope="row">{{ c.name }}</th>
+                    <td>{{ c.email }}</td>
+                    <td>{{ c.telephone }}</td>
+                    <td><button class="btn btn-warning" [routerLink]="['/customer/update', c.email]">Update</button></td>
+                    <td><button class="btn btn-danger" (click)="deleteCustomer(c.email)">Delete</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

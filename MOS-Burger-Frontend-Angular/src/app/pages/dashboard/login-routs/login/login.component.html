@@ -1,0 +1,41 @@
+
+<div class="boddy">
+    <div class="login-container">
+        <!-- Decorative elements -->
+        <div class="burger-icon"></div>
+        <div class="burger-icon-2"></div>
+        <div class="decoration decoration-1"></div>
+        <div class="decoration decoration-2"></div>
+        
+        <div class="logo">
+            <div class="logo-text">MOS BURGER</div>
+            <span class="tagline">Delicious in every bite</span>
+        </div>
+        
+        <h1>Welcome Back</h1>
+        
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="username">Username or Email</label>
+                <input type="text" id="username" name="username" [(ngModel)]="username" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" [(ngModel)]="password" required>
+            </div>
+            
+            <div class="remember-me">
+                <input type="checkbox" id="saveLogin" name="saveLogin">
+                <label for="saveLogin">Remember me</label>
+            </div>
+            
+            <button type="submit" class="btn-login" (click)="cheackUser(username,password)">Sign In</button>
+        </form>
+        
+        <div class="links">
+            <a href="#">Forgot Password?</a>
+            <a href="#">Create Account</a>
+        </div>
+    </div>
+</div>
