@@ -7,10 +7,11 @@ import org.springframework.web.bind.annotation.*;
 import java.sql.Date;
 import java.util.List;
 
+
 @RestController
 @RequestMapping("/api/order")
 @RequiredArgsConstructor
-@CrossOrigin()
+@CrossOrigin(origins = "http://localhost:4200")
 public class OrderController {
     final OrderService orderService;
 

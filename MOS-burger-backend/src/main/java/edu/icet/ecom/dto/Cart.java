@@ -12,5 +12,4 @@ public class Cart {
      private String customerEmail;
      private Long productId;
      private Long qty;
-
 }

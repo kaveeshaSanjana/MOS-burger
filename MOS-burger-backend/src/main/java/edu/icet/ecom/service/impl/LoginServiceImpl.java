@@ -33,7 +33,7 @@ public class LoginServiceImpl implements LoginService {
         System.out.println(userDao.findByUsername(username));
         if(userDao.findByUsername(username)!=null){
             try{
-                authenticationManager.authenticate(new UsernamePasswordAuthenticationToken(username,"12345"));
+                authenticationManager.authenticate(new UsernamePasswordAuthenticationToken(username,password));
             } catch (AuthenticationException e) {
                 throw new RuntimeException(e);
             }

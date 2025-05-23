@@ -16,9 +16,9 @@ import static org.junit.jupiter.api.Assertions.assertNull;
 public class CartServiceImplTest {
 
 
-    @Autowired
+    @Mock
     private CartServiceImpl cartService;
-    @Autowired
+    @Mock
     private ProductServiceImpl productService;
 
     @Mock
